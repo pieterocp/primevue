@@ -25,6 +25,8 @@ jobs:
                   message: 'Thanks a lot for your contribution! But, PR does not seem to be linked to any issues. Please [manually link to an issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#manually-linking-a-pull-request-or-branch-to-an-issue-using-the-issue-sidebar) or mention it in the description using #<issue_id>.'
 
             - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+              with:
+                persist-credentials: false
             - uses: pnpm/action-setup@b906affcce14559ad1aafd4ab0e942779e9f58b1 # v4
               with:
                   version: 9.6.0
